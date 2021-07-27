@@ -1,6 +1,27 @@
 
-body{
-    background-color: linear-gradient(118.18deg, #FFFFFF 0%, #E5E5E5 100%);
+/* General */
+html{
+    background-color: lightsteelblue;
+}
+*{
+    font-family: Scada;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
 }
 
 /* NAV  */
@@ -16,20 +37,25 @@ body{
     text-align: center;
 }
 
-nav{
+.navigation{
     width: 73%;
     padding: 1%;
 }
 
-ul{
-    width: 50%;
+.ulHeader{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
     margin-left: auto;
+}
+
+li{
+    width 25%;
+    padding: 10px;
 }
 
 
 /* HERO IMAGE */
-
-
 .heroImg{
     height: 600px;
     padding: 25px;
@@ -38,6 +64,34 @@ ul{
 .content{
     width: 500px;
     margin: 0 auto;
+}
+
+/* My Skills */
+.flexContainer{
+    display: flex;
+    height: 5   00px;
+}
+
+.flexChild{ 
+    width: 33%;
+    padding: 20px;
+    margin: auto;
+}
+
+.skillsImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+}
+
+
+/* My Work */
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* FOOTER */
@@ -51,3 +105,14 @@ footer{
     vertical-align: top;
 }
 
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+     }
+     .flexChild{ 
+        width: 100%;
+        padding: auto;
+        margin: auto;
+    }
+
+}
